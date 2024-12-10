@@ -19,7 +19,33 @@ body {
   overflow: hidden;
   perspective: 1000px;
 }
+.cute-text {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 2.5rem;
+  color: #ff6ec7;
+  text-shadow: 0 0 10px #ff91d6, 0 0 20px #ffc8e3;
+  background: linear-gradient(to right, #ffe4f7, #ffc8e3);
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  animation: fade-in-text 3s ease-in-out;
+  z-index: 100;
+}
 
+@keyframes fade-in-text {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+  }
+}
 .night {
   position: fixed;
   left: 50%;
