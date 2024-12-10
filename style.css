@@ -1,0 +1,50 @@
+/* Flower Text Styles */
+.flower-text {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 100;
+  animation: fadeInText 3s ease-in-out;
+}
+
+.flower-text h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #ffeb3b;
+  text-shadow: 0 0 10px rgba(255, 255, 0, 0.7), 0 0 20px rgba(255, 255, 0, 0.5);
+}
+
+.flower-text h1 span {
+  color: #ff4081;
+  animation: heartbeat 1.5s infinite;
+}
+
+.flower-text p {
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+  margin-top: 1rem;
+}
+
+/* Text Animations */
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
