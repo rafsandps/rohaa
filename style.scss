@@ -1360,3 +1360,24 @@ body {
 .not-loaded * {
   animation-play-state: paused !important;
 }
+.message {
+  position: absolute;
+  top: 10%; /* Positioning above the flowers */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff69b4; /* Cute pink */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add subtle shadow */
+  animation: fadeIn 2s ease-in-out; /* Smooth fade-in animation */
+}
+
+/* Fade-in effect animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
