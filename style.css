@@ -72,22 +72,7 @@ body {
       rgb(0, 0, 0) 19px,
       transparent 19px,
       transparent 22px
-    ),
-    repeating-linear-gradient(
-      189deg,
-      rgb(0, 0, 0) 0px,
-      rgb(0, 0, 0) 19px,
-      transparent 19px,
-      transparent 22px
-    ),
-    repeating-linear-gradient(
-      148deg,
-      rgb(0, 0, 0) 0px,
-      rgb(0, 0, 0) 19px,
-      transparent 19px,
-      transparent 22px
-    ),
-    linear-gradient(90deg, rgb(0, 255, 250), rgb(240, 240, 240));
+    );
 }
 
 .flowers {
@@ -146,6 +131,17 @@ body {
   animation: grow-flower-tree 4s backwards;
 }
 
+.flower__light {
+  position: absolute;
+  bottom: 0vmin;
+  width: 1vmin;
+  height: 1vmin;
+  background-color: rgb(255, 251, 0);
+  border-radius: 50%;
+  filter: blur(0.2vmin);
+  animation: light-ans 4s linear infinite backwards;
+}
+
 @keyframes grow-flower-tree {
   0% {
     height: 0;
@@ -167,17 +163,6 @@ body {
   50% {
     transform: rotate(-2deg);
   }
-}
-
-.flower__light {
-  position: absolute;
-  bottom: 0vmin;
-  width: 1vmin;
-  height: 1vmin;
-  background-color: rgb(255, 251, 0);
-  border-radius: 50%;
-  filter: blur(0.2vmin);
-  animation: light-ans 4s linear infinite backwards;
 }
 
 @keyframes light-ans {
