@@ -1,5 +1,6 @@
-window.addEventListener('load', () => {
-  setTimeout(() => {
-    document.body.classList.remove('not-loaded');
+onload = () => {
+  const c = setTimeout(() => {
+    document.body.classList.remove("not-loaded");
+    clearTimeout(c);
   }, 1000);
-});
+};
